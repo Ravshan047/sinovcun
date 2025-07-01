@@ -17,7 +17,7 @@ const HomePage = () => {
     window.scrollTo(0, 0);
 
     // Yangiliklarni backenddan olish
-    axios.get('http://localhost:8005/api/news/list/')
+    axios.get('https://lutsifer.pythonanywhere.com/api/news/list/')
       .then(response => {
         console.log(response.data);
         setNewsList(response.data);

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
-const API_URL = 'http://localhost:8005/api/news/departments/gas';
+const API_URL = 'https://lutsifer.pythonanywhere.com/api/news/departments/gas';
 
 interface GasItem {
     id: number;
@@ -17,6 +17,7 @@ interface GasItem {
 const fetchGasDepartment = async (): Promise<GasItem[]> => {
     try {
         const response = await axios.get(API_URL);
+        console.log(response.data)
         return response.data;
     } catch (error) {
         console.error("Gaz bo‘limini olishda xatolik:", error);

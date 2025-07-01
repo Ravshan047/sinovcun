@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
-const API_URL = 'http://localhost:8005/api/news/departments/police/';
+const API_URL = 'https://lutsifer.pythonanywhere.com/api/news/departments/police/';
 
 interface PoliceNotice {
     id: number;

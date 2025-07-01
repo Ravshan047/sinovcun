@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8005/api';
+const API_URL = 'https://lutsifer.pythonanywhere.com/api';
 
 // 🔐 Token yuborish kerak bo‘lgan joylar uchun
 const getAuthHeaders = () => {
