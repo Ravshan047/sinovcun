@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   // Login funksiyasi
   const login = async (username: string, password: string): Promise<boolean> => {
     try {
-      const response = await axios.post('https://lutsifer.pythonanywhere.com/users/login/', {
+      const response = await axios.post('https://lutsifer.pythonanywhere.com/api/users/login/', {
         username,
         password,
       });
@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       const userData = response.data.user || {};
 
       localStorage.setItem('access_token', access);
-      localStorage.setItem('refresh_token', refresh);
+      localStorage.setItem('refresh_token', refresh); 
       localStorage.setItem('user', JSON.stringify(userData));
       setUser(userData);
 
