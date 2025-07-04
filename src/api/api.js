@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://lutsifer.pythonanywhere.com/api';
+const API_URL = 'http://127.0.0.1:8005/api';  // Mahalliy sinov uchun
 
 // 🔐 Token yuborish kerak bo‘lgan joylar uchun
 const getAuthHeaders = () => {
@@ -35,10 +35,12 @@ export const loginUser = async (credentials) => {
 // 📰 Barchaga ochiq yangiliklar API
 export const fetchNews = async () => {
   try {
-    const response = await axios.get(`${API_URL}/news/list/`);
+    const response = await axios.get(`${API_URL}/news/list/`, {
+      headers: getAuthHeaders(), // Autentifikatsiya opsiyasi
+    });
     return response.data;
   } catch (error) {
-    console.error('Yangiliklarni olishda xatolik:', error);
+    console.error('Yangiliklarni olishda xatolik:', error.response?.status, error.response?.data);
     throw error.response?.data || { error: 'Tarmoq xatosi yoki server javobi yo‘q' };
   }
 };
@@ -46,10 +48,12 @@ export const fetchNews = async () => {
 // 🏛 Bo‘limlar (departments) ro‘yxatini olish
 export const fetchDepartments = async () => {
   try {
-    const response = await axios.get(`${API_URL}/news/departments/`);
+    const response = await axios.get(`${API_URL}/news/departments/`, {
+      headers: getAuthHeaders(),  // Autentifikatsiya talab qilishi mumkin
+    });
     return response.data;
   } catch (error) {
-    console.error("Bo‘limlar ma'lumotini olishda xatolik:", error);
+    console.error("Bo‘limlar ma'lumotini olishda xatolik:", error.response?.status, error.response?.data);
     throw error.response?.data || { error: 'Tarmoq xatosi yoki server javobi yo‘q' };
   }
 };

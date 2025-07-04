@@ -1,4 +1,3 @@
-// importlar o‘zgarmaydi
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
@@ -7,7 +6,7 @@ import Button from '../components/ui/Button';
 import DepartmentCard from '../components/departments/DepartmentCard';
 import NewsCard from '../components/news/NewsCard';
 import departments from '../data/departmentsData';
-import axios from 'axios';
+import { fetchNews } from '../api/api';
 
 const HomePage = () => {
   const { t } = useLanguage();
@@ -17,10 +16,10 @@ const HomePage = () => {
     window.scrollTo(0, 0);
 
     // Yangiliklarni backenddan olish
-    axios.get('https://lutsifer.pythonanywhere.com/api/news/list/')
+    fetchNews()
       .then(response => {
-        console.log(response.data);
-        setNewsList(response.data);
+        console.log(response);
+        setNewsList(response);
       })
       .catch(error => {
         console.error('Xatolik:', error);
@@ -66,7 +65,6 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        {/* Wave decoration OLIB TASHLANDI */}
       </section>
 
       {/* Departments Section */}

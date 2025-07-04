@@ -21,7 +21,9 @@ const NewsPage = () => {
         const sorted = [...data].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
         setNewsList(sorted);
       } catch (err) {
-        setError('Yangiliklarni yuklab bo‘lmadi.');
+        const errorMsg = err?.error || 'Yangiliklarni yuklab bo‘lmadi.';
+        setError(errorMsg);
+        console.error('News fetch error:', err);
       } finally {
         setLoading(false);
       }
@@ -33,20 +35,25 @@ const NewsPage = () => {
   const filteredNews = filter ? newsList.filter(n => n.department === filter) : newsList;
 
   return (
-          <div className="min-h-screen bg-gray-50 pb-16">
-            {/* Header FONI */}
-            <div className="h-20 bg-blue-800 shadow"></div>
+    <div className="min-h-screen bg-gray-50 pb-16">
+      {/* Header FONI */}
+      <div className="h-20 bg-blue-800 shadow"></div>
 
-            {/* Header Matni */}
-            <div className=" mx-auto flex items-center justify-center">
-                <div className="text-center p-4 rounded">
-                    <p className="mt-2 text-sm text-gray-600"></p>
-                </div>
-            </div>
+      {/* Header Matni */}
+      <div className="mx-auto flex items-center justify-center">
+        <div className="text-center p-4 rounded">
+          <p className="mt-2 text-sm text-gray-600"></p>
+        </div>
+      </div>
 
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="flex flex-wrap gap-2 mb-8">
-          <button onClick={() => setFilter(null)} className={`px-4 py-2 rounded-full text-sm font-medium ${filter === null ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700'}`}>All</button>
+          <button
+            onClick={() => setFilter(null)}
+            className={`px-4 py-2 rounded-full text-sm font-medium ${filter === null ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700'}`}
+          >
+            All
+          </button>
           {departments.map(dept => (
             <button
               key={dept.id}
