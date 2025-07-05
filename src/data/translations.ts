@@ -149,8 +149,8 @@ const translations = {
     adminDashboard: 'Admin boshqaruv paneli',
     
     // Homepage
-    welcomeTitle: 'Shahar rasmiy portaliga xush kelibsiz',
-    welcomeSubtitle: "Shahar xizmatlari va bo'limlari haqida to'liq ma'lumot",
+    welcomeTitle: 'Tuman rasmiy portaliga xush kelibsiz',
+    welcomeSubtitle: "Tuman xizmatlari va bo'limlari haqida to'liq ma'lumot",
     viewDepartments: "Bo'limlarni ko'rish",
     latestNews: "So'nggi yangiliklar",
     readMore: 'Batafsil',
@@ -170,20 +170,20 @@ const translations = {
     workingHours: 'Ish vaqti',
     
     // Department Descriptions
-    electricityDepartmentDescription: "Elektr ta'minoti departamenti shaharning uzluksiz elektr energiyasi ta'minotini, elektr tarmoqlarining xizmat ko'rsatilishini va infratuzilmaning modernizatsiyasini ta'minlaydi.",
-    gasDepartmentDescription: "Gaz ta'minoti departamenti shaharning barcha aholisi va korxonalariga xavfsiz va ishonchli gaz ta'minotini ta'minlaydi.",
-    policeDepartmentDescription: "Shahar politsiyasi jamoat xavfsizligini ta'minlaydi, jinoyatlarning oldini oladi va tekshiradi, jamoat tartibini saqlaydi.",
+    electricityDepartmentDescription: "Elektr ta'minoti departamenti tumanning uzluksiz elektr energiyasi ta'minotini, elektr tarmoqlarining xizmat ko'rsatilishini va infratuzilmaning modernizatsiyasini ta'minlaydi.",
+    gasDepartmentDescription: "Gaz ta'minoti departamenti tumanning barcha aholisi va korxonalariga xavfsiz va ishonchli gaz ta'minotini ta'minlaydi.",
+    policeDepartmentDescription: "Tuman politsiyasi jamoat xavfsizligini ta'minlaydi, jinoyatlarning oldini oladi va tekshiradi, jamoat tartibini saqlaydi.",
     internalAffairsDepartmentDescription: "Ichki ishlar departamenti fuqarolik ro'yxatidan o'tkazish, hujjatlarni berish va fuqarolar huquqlarini himoya qilish uchun javobgardir.",
     waterDepartmentDescription: "Suv ta'minoti departamenti toza ichimlik suvi ta'minotini ta'minlaydi va kanalizatsiya va suv tozalash tizimini boshqaradi.",
-    educationDepartmentDescription: "Ta'lim departamenti shaharning barcha ta'lim muassasalarini nazorat qiladi va barcha yoshdagilar uchun ta'lim dasturlarini amalga oshiradi.",
-    healthDepartmentDescription: "Sog'liqni saqlash departamenti shahar kasalxonalari, poliklinikalari va kasalliklarning oldini olish dasturlarini boshqaradi.",
+    educationDepartmentDescription: "Ta'lim departamenti tuman barcha ta'lim muassasalarini nazorat qiladi va barcha yoshdagilar uchun ta'lim dasturlarini amalga oshiradi.",
+    healthDepartmentDescription: "Sog'liqni saqlash departamenti tuman kasalxonalari, poliklinikalari va kasalliklarning oldini olish dasturlarini boshqaradi.",
     transportDepartmentDescription: "Transport departamenti jamoat transporti, yo'l infratuzilmasi va harakat tartibga solish uchun javobgardir.",
     
     // Services
     electricityConnection: "Elektr tarmog'iga ulanish",
     electricityBilling: "Elektr energiyasi to'lovi",
     electricityOutage: 'Elektr uzilishi haqida xabar berish',
-    electricityConnectionDescription: "Yangi obyektlarni shahar elektr tarmog'iga ulash xizmati, barcha kerakli hujjatlarni rasmiylashtirish bilan.",
+    electricityConnectionDescription: "Yangi obyektlarni tuman elektr tarmog'iga ulash xizmati, barcha kerakli hujjatlarni rasmiylashtirish bilan.",
     electricityBillingDescription: "Elektr energiyasi uchun to'lovlar tizimi, qarzlarni tekshirish va to'lovlar tarixi.",
     electricityOutageDescription: "Elektr ta'minotidagi uzilishlar haqida xabar berish va ta'mirlash ishlari holatini kuzatish uchun xizmat.",
     
@@ -206,12 +206,12 @@ const translations = {
     citizenComplaints: 'Fuqarolar murojaatlari',
     documentServicesDescription: 'Pasportlar, shaxsiy guvohnomalar va boshqa rasmiy hujjatlarni rasmiylashtirish va berish.',
     residencyRegistrationDescription: "Yashash joyini ro'yxatga olish, vaqtinchalik ro'yxatga olish va hisobdan chiqarish xizmatlari.",
-    citizenComplaintsDescription: "Shahar infratuzilmasi va xizmatlari bo'yicha shikoyatlar va takliflar berish tizimi.",
+    citizenComplaintsDescription: "Tuman infratuzilmasi va xizmatlari bo'yicha shikoyatlar va takliflar berish tizimi.",
     
     waterConnection: "Suv ta'minotiga ulanish",
     waterBilling: "Suv uchun to'lov",
     waterQuality: 'Suv sifati',
-    waterConnectionDescription: "Yangi obyektlar uchun shahar suv ta'minoti tizimiga ulanish xizmati.",
+    waterConnectionDescription: "Yangi obyektlar uchun tuman suv ta'minoti tizimiga ulanish xizmati.",
     waterBillingDescription: "Suv uchun hisob-kitoblar tizimi, qarzlarni tekshirish va to'lovlar tarixi.",
     waterQualityDescription: "Ichimlik suvi sifati, sinov natijalari va xavfsizlik standartlari haqida ma'lumot.",
     
@@ -265,8 +265,8 @@ const translations = {
     privacy: 'Maxfiylik siyosati',
     
     // News
-    newsTitle: "Shahar yangiliklari va e'lonlari",
-    newsSubtitle: "Shahardagi so'nggi voqealardan xabardor bo'ling",
+    newsTitle: "Tuman yangiliklari va e'lonlari",
+    newsSubtitle: "Tumandagi so'nggi voqealardan xabardor bo'ling",
     
     // Other
     loading: 'Yuklanmoqda...',
