@@ -61,7 +61,7 @@ const ContactPage = () => {
                     <MapPin className="h-6 w-6 text-blue-600 mt-0.5 mr-3" />
                     <div>
                       <p className="font-medium text-gray-900">{t('address')}</p>
-                      <p className="text-gray-600">123 Amir Temur Avenue,<br />Tashkent, Uzbekistan</p>
+                      <p className="text-gray-600"> Vobkent ,<br />Buxoro, Uzbekistan</p>
                     </div>
                   </div>
 
@@ -69,8 +69,8 @@ const ContactPage = () => {
                     <Phone className="h-6 w-6 text-blue-600 mt-0.5 mr-3" />
                     <div>
                       <p className="font-medium text-gray-900">{t('phone')}</p>
-                      <p className="text-gray-600">+998 71 123 4567</p>
-                      <p className="text-gray-600">+998 71 987 6543</p>
+                      <p className="text-gray-600">+998 65 222 22 22</p>
+                      <p className="text-gray-600">+998 91 830 18 01</p>
                     </div>
                   </div>
 
@@ -78,8 +78,8 @@ const ContactPage = () => {
                     <Mail className="h-6 w-6 text-blue-600 mt-0.5 mr-3" />
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
-                      <p className="text-gray-600">info@cityportal.uz</p>
-                      <p className="text-gray-600">support@cityportal.uz</p>
+                      <p className="text-gray-600">vobkentinfo@gmail.com</p>
+                      <p className="text-gray-600">vobkentuz@gmail.com</p>
                     </div>
                   </div>
 
@@ -87,9 +87,9 @@ const ContactPage = () => {
                     <Clock className="h-6 w-6 text-blue-600 mt-0.5 mr-3" />
                     <div>
                       <p className="font-medium text-gray-900">{t('workingHours')}</p>
-                      <p className="text-gray-600">Monday - Friday: 9:00 - 18:00</p>
-                      <p className="text-gray-600">Saturday: 9:00 - 14:00</p>
-                      <p className="text-gray-600">Sunday: Closed</p>
+                      <p className="text-gray-600">Dushanba: - Juma: 9:00 - 18:00</p>
+                      <p className="text-gray-600">Shanba: 9:00 - 14:00</p>
+                      <p className="text-gray-600">Yakshanba: Yopiq</p>
                     </div>
                   </div>
                 </div>
